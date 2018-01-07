@@ -1,10 +1,618 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>首页</title>
-</head>
-<body>
+
+
+<html lang="zh-cn"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabWeng - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=ON3Mxdo4-HlSMqbNDBZXhFIcGLon3eZDvU8zBESgwkk1">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/Custom/bundle-Custom-mobile.css?v=D4ZG96to-4HBTPc_nukUGx4UJPJRCpcXUrj8NiiyXiU1">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/hlwyfeng/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/hlwyfeng/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/hlwyfeng/wlwmanifest.xml">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'hlwyfeng', cb_enable_mathjax=true;var isLogined=true;</script>
+<script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'blogpost-body', processEscapes: true },
+        TeX: { 
+            equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, extensions: ['extpfeil.js'] },
+            'HTML-CSS': { linebreaks: { automatic: true } },
+            SVG: { linebreaks: { automatic: true } }
+        });
+    </script><script src="//mathjax.cnblogs.com/2_7_2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/bundles/blog-common.js?v=WqQBCaYwhaE0eE5id4LTUAPpfOR13WHR18YTLjzh8zw1" type="text/javascript"></script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/hlwyfeng/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/hlwyfeng/">WYF</a></h1>
+<h2>专注前端</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li>
+<!----></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+
+<!--done-->
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl00_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2017/04/24.html">2017年4月24日</a>				  
+	</div>
+
 	
-</body>
-</html>
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl00_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6754842.html">小谈数组去重</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 数组去重是一个常见的问题，在用C语言刷算法题的时候属于比较水的题目，很容易就AC。不过在JavaScript中，因为方法多样，所以解题的方法也多种多样，以下是自己的研究过程与结果。 准备一：随机数组生成 在研究之前，我们先实现一个随机生成数组的方法： 我们来测试一下运行结果： 示例1： 示例1的运行<a href="http://www.cnblogs.com/hlwyfeng/p/6754842.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2017-04-24 01:09 TabWeng 阅读(189) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6754842" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl01_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2017/03/15.html">2017年3月15日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl01_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6555772.html">前端问题解答</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 今天同学问我一个JS问题，我觉得有必要记录下来，于是开了这篇博文，打算长期记录同学和朋友问我的一些问题的解答思路和过程，当然，如果比较简单的不会记录啦~，这篇博文长期更新，希望和大家一起交流学习！ 问题一：为什么以下代码输出的结果是10？ 解答如下： 第一眼看过去，以为是一个闭包问题，然后想到闭包的<a href="http://www.cnblogs.com/hlwyfeng/p/6555772.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2017-03-15 18:46 TabWeng 阅读(218) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6555772" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl02_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/25.html">2016年11月25日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl02_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6102661.html">JavaScript使用封装</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 基本封装方法、使用闭包进行封装<a href="http://www.cnblogs.com/hlwyfeng/p/6102661.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-25 18:38 TabWeng 阅读(596) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6102661" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl03_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/24.html">2016年11月24日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl03_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6099957.html">JavaScript使用接口</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 在经典的Java面向对象语言中，可以用关键字interface来定义接口，用implement来实现接口，而JavaScript虽然也是面向对象语言，但是它并没有内置这些，不过由于JavaScript的灵活性，我们可以通过模拟来实现，方法是使用一个辅助类和辅助函数来协助完成这一过程。<a href="http://www.cnblogs.com/hlwyfeng/p/6099957.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-24 23:25 TabWeng 阅读(2067) 评论(2)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6099957" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl04_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/23.html">2016年11月23日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl04_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6093850.html">JavaScript精要（系列）</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: JavaScript精要系列（持续更新中...）<a href="http://www.cnblogs.com/hlwyfeng/p/6093850.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-23 15:39 TabWeng 阅读(109) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6093850" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl05_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/22.html">2016年11月22日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl05_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6090029.html">JavaScript DOM节点和文档类型</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: Node类型：
+获得子节点的集合：childNodes()、
+获得元素的父节点：parentNode()、
+获得相邻同胞节点、
+获得首尾子节点、
+判断是否有子节点：hasChildNodes()、
+在子节点尾部插入节点：appendChild()、
+在子节点前面插入节点：insertBefore()、
+替换子节点：replaceChild()、
+删除子节点：removeChild()、
+克隆节点：cloneNode()、
+Document类型：
+document的属性、
+HTMLDocument的属性、
+查找元素、
+写入<a href="http://www.cnblogs.com/hlwyfeng/p/6090029.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-22 17:45 TabWeng 阅读(163) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6090029" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl06_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/21.html">2016年11月21日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl06_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6084072.html">JavaScript数组类型</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 特点
+、定义数组两种方法
+、获得数组的值
+、toString()
+、valueOf()
+、数组元素间分隔符设置 : join()
+、向数组尾部添加元素：push()
+、取出数组尾部的元素：pop()
+、取出数组头部的元素：shift()
+、从数组头部添加元素：unshift()
+、排序方法：sort()
+、数组倒置：reverse()
+、组合数组：concat()
+、获取数组片段组成新数组：slice()
+、强大的操作数组方法：splice()
+、删除操作
+、插入操作
+、替换操作
+、获得数组元素的位置：indexOf()
+、迭代方法
+、every()
+、some()
+、filter()
+、map()
+、forEach()
+、归并方法
+、reduce()
+、reduceRight()<a href="http://www.cnblogs.com/hlwyfeng/p/6084072.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-21 10:28 TabWeng 阅读(121) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6084072" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl07_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/20.html">2016年11月20日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl07_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6082210.html">JavaScript函数表达式</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 理解函数表达式的基本语法形式
+、递归建议
+、理解匿名函数
+、理解闭包
+、性能优化
+、闭包的运用<a href="http://www.cnblogs.com/hlwyfeng/p/6082210.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-20 11:09 TabWeng 阅读(158) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6082210" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl08_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/19.html">2016年11月19日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl08_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6080506.html">JavaScript变量和作用域</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 认识JavaScript中的变量、理解基本类型变量与引用类型变量的差异
+、关于复制
+、关于传参
+、作用域
+、作用域链
+、延长作用域链
+、没有块级作用域<a href="http://www.cnblogs.com/hlwyfeng/p/6080506.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-19 14:31 TabWeng 阅读(149) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6080506" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl09_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/18.html">2016年11月18日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl09_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6079250.html">JavaScript继承</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 继承中的最佳范式是寄生组合继承，它结合了寄生式继承（来源于原型式继承）和组合继承，原型式继承可以以一个对象为基础，对基础对象进行浅复制，然后赋给子类。寄生式实现对原型式继承的封装，使之拓展更多的属性和方法。而组合继承解决了原型链对于原型对象全面复制父类构造函数的属性的问题（特别是引用类型，从构造函数的属性变成原型对象的属性，就共享了），同时解决了借用构造函数只能把属性和方法写入构造函数中的问题。组合继承的问题在于原型对象中有多余的属性（因为使用了原型链继承，构造函数的属性都继承在了原型中了，这个问题由原型式继承解决）。<a href="http://www.cnblogs.com/hlwyfeng/p/6079250.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-18 22:55 TabWeng 阅读(117) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6079250" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+			<div class="postSeparator"></div>
+		
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl09_DayList_TitleUrl_1" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6077366.html">JavaScript创建对象</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 最佳方式：
+原型模式与构造模式组合使用、
+动态原型模式；
+常用的方法：
+删除实例属性 delete、
+检测对象类型 instanceof、
+判断原型对象与实例之间是否联系 isPrototypeOf()、
+获得原型对象 Object.getPrototypeOf()、
+判断属性是否存在于原型对象中、
+获得可枚举的属性和方法 Object.keys()<a href="http://www.cnblogs.com/hlwyfeng/p/6077366.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-18 13:29 TabWeng 阅读(160) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6077366" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl10_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/16.html">2016年11月16日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl10_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6069738.html">MySQL数据表操作</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 创建数据表、
+    打开数据库、
+    创建数据表、
+    查看数据表结构、
+    插入记录、
+    查找表数据、
+    表创建的基本约束、
+    字段的NULL与NOT NULL、
+    自动编号、
+    设置主键、
+    唯一约束、
+    默认值DEFAULT<a href="http://www.cnblogs.com/hlwyfeng/p/6069738.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-16 15:32 TabWeng 阅读(130) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6069738" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+			<div class="postSeparator"></div>
+		
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl10_DayList_TitleUrl_1" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6068077.html">MySQL基本数据类型</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: MySQL数据类型包括：整型、浮点型、日期类型、字符型，这里用表格的方式详细说明每个数据类型，这些只要记住常用的即可，需要再查阅。<a href="http://www.cnblogs.com/hlwyfeng/p/6068077.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-16 10:39 TabWeng 阅读(728) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6068077" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+			<div class="postSeparator"></div>
+		
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl10_DayList_TitleUrl_2" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6066743.html">MySQL基本操作</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: MySQL登录、MySQL退出、修改MySQL提示符、MySql常用命令、MySQL语句的规范、数据库操作、创建数据库、查看当前服务器下的数据表列表、修改数据库、删除数据库<a href="http://www.cnblogs.com/hlwyfeng/p/6066743.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-16 00:55 TabWeng 阅读(235) 评论(0)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6066743" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+
+<div class="day">
+	<div class="dayTitle">
+		<a id="homepage1_HomePageDays_DaysList_ctl11_ImageLink" href="//www.cnblogs.com/hlwyfeng/archive/2016/11/14.html">2016年11月14日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				<a id="homepage1_HomePageDays_DaysList_ctl11_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/hlwyfeng/p/6058274.html">Linux命令基本格式及目录处理命令</a>
+			</div>
+			<div class="postCon"><div class="c_b_p_desc">摘要: 命令提示符 [root@localhost ~] root ：当前登录用户 localhost ：主机名 ~ ：当前所在的目录，此处为“家”目录 ：root超级用户的提示符，如果是普通用户，则为 $ 命令格式 命令 [选项] [参数] 中括号 [] 表示可选 查询目录中的内容：ls ls [选项] <a href="http://www.cnblogs.com/hlwyfeng/p/6058274.html" class="c_b_p_desc_readmore">阅读全文</a></div></div>
+			<div class="clear"></div>
+			<div class="postDesc">posted @ 2016-11-14 10:42 TabWeng 阅读(1976) 评论(2)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6058274" rel="nofollow">编辑</a></div>
+			<div class="clear"></div>
+		
+</div>
+
+<div class="topicListFooter"><div id="nav_next_page"><a href="http://www.cnblogs.com/hlwyfeng/default.html?page=2">下一页</a></div></div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/hlwyfeng/category/860996.html">０===前端开发=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/hlwyfeng/category/785734.html">０&gt; CSS+XHTML(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/hlwyfeng/category/914605.html">０&gt; CSS3</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/hlwyfeng/category/785735.html">０&gt; HTML5</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/hlwyfeng/category/785732.html">０&gt; JavaScript(12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/hlwyfeng/category/683101.html">１===前端框架=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/hlwyfeng/category/915132.html">１&gt; AngularJS</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/hlwyfeng/category/914619.html">１&gt; Backbone.js</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/hlwyfeng/category/789593.html">１&gt; Bootstrap(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/hlwyfeng/category/790779.html">１&gt; jQuery</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/hlwyfeng/category/914620.html">１&gt; Vue.js</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/hlwyfeng/category/593886.html">２===全栈开发=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/hlwyfeng/category/906067.html">２&gt; Linux(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/hlwyfeng/category/909716.html">２&gt; MySQL(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/hlwyfeng/category/914618.html">２&gt; Node.js</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/hlwyfeng/category/792276.html">２&gt; Python(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/hlwyfeng/category/593870.html">３===开发专栏=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/hlwyfeng/category/792807.html">３&gt; 基础算法(7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/hlwyfeng/category/914607.html">３&gt; 正则表达式</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/hlwyfeng/category/861004.html">４===自我管理=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/hlwyfeng/category/683102.html">４&gt; 读书笔记</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/hlwyfeng/category/683103.html">４&gt; 计划与总结</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/hlwyfeng/category/685826.html">４&gt; 思考与实践(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/hlwyfeng/category/901655.html">４&gt; 问题讨论</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/hlwyfeng/category/861000.html">５===我的生活=====</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/hlwyfeng/category/785739.html">５&gt; 生活随笔(1)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/hlwyfeng/archive/2017/04.html">2017年4月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/hlwyfeng/archive/2017/03.html">2017年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/hlwyfeng/archive/2016/12.html">2016年12月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/hlwyfeng/archive/2016/11.html">2016年11月 (14)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/hlwyfeng/archive/2016/10.html">2016年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/hlwyfeng/archive/2016/02.html">2016年2月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/hlwyfeng/archive/2015/05.html">2015年5月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/hlwyfeng/archive/2015/04.html">2015年4月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/hlwyfeng/archive/2014/12.html">2014年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/hlwyfeng/archive/2014/11.html">2014年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/hlwyfeng/archive/2014/10.html">2014年10月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/hlwyfeng/archive/2014/08.html">2014年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/hlwyfeng/archive/2014/04.html">2014年4月 (1)</a> </li>
+
+</ul>
+
+</div>
+
+</div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 TabWeng
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
